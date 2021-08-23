@@ -397,7 +397,7 @@
                 <div class="modal">
                     <button type="button" class="modal-btn-svg" data-modal-close>
                     <svg class="svg-close">
-                        <use  href="./images/index/spritex.svg#icon-Vector-x"></use>
+                        <use  href="./images/index/sprite-modal-close.svg#icon-Vectorx"></use>
                     </svg>
                 </button>
                 <form action="#" class="modal-form">
@@ -405,35 +405,36 @@
                     <label class="label-form">
                     Имя 
                         <span class="modal-form-input-wrapper">
-                            <input type="text" name="user-name">
+                            <input type="text" name="user-name" class="modal-form-input" minlength="2" required>
                             <svg class="svg-modal">
-                                <use></use>
+                                <use href="./images/index/sprite-modal.svg#icon-contact"></use>
                             </svg>
                         </span>
                     </label>
                     <label class="label-form">
                     Телефон
                         <span class="modal-form-input-wrapper">
-                            <input type="tel" name="user-phone">
+                            <input type="tel" name="user-phone" class="modal-form-input" required 
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="068-111-11-11">
                             <svg class="svg-modal">
-                                <use></use>
+                                <use href="./images/index/sprite-modal.svg#icon-tel"></use>
                             </svg>
                         </span>
                     </label>
                     <label class="label-form">
                     Почта 
                         <span class="modal-form-input-wrapper">
-                            <input type="mail" name="user-mail">
+                            <input type="mail" name="user-mail" class="modal-form-input" required>
                             <svg class="svg-modal">
-                                <use></use>
+                                <use href="./images/index/sprite-modal.svg#icon-mail2"></use>
                             </svg>
                         </span>
                     </label>
                     <label class="label-form">
                         Коментарий
-                            <textarea name="user-mesage" class="modal-form-mesage"></textarea> 
+                            <textarea name="user-mesage" class="modal-form-mesage" placeholder="Введите текст"></textarea> 
                     </label>
-                    <input type="checkbox" id="checkbox-policy" name="user-policy">
+                    <input type="checkbox" id="checkbox-policy" name="user-policy" class="modal-form-checkbox">
                     <label for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю<a href="" 
                         class="modal-form-policy-link">Условия договора</a> </label>
                         <button type="submit" class="modal-form-btn">Отправить</button>

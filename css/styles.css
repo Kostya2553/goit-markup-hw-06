@@ -587,28 +587,108 @@ img {
   min-height: 581px;
   min-width: 528px;
   border-radius: 4px;
+  padding: 40px;
   background-color: #fff;
+}
+.modal-form-head {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 20px;
+
+  color: #212121;
 }
 .svg-close {
   width: 11px;
   height: 11px;
+  fill: #000000;
+}
+.svg-close:focus {
+  fill: var(--accent-color);
 }
 .modal-btn-svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
   cursor: pointer;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin-top: 8px;
-  margin-right: 8px;
-  margin-left: 490px;
-  background-color: #fff;
+  background-color: transparent;
+  padding: 0;
 }
 .svg-modal {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
+  outline: none;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 40px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.modal-form-input:focus {
+  border-color: var(--accent-color);
+}
+.modal-form-input:focus + .svg-modal {
+  fill: var(--accent-color);
+}
+.modal-form-input-wrapper {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+.modal-form-mesage {
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-form-mesage:focus {
+  border-color: var(--accent-color);
+}
+.modal-form-btn {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+
+  color: floralwhite;
+  background: var(--accent-color);
+
+  align-items: center;
+  display: block;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /*============ FOOTER END ============*/
 
