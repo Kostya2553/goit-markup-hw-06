@@ -606,7 +606,10 @@ img {
   margin-left: 490px;
   background-color: #fff;
 }
-
+.svg-modal {
+  width: 15px;
+  height: 15px;
+}
 /*============ FOOTER END ============*/
 
 /*============ INDEX.HTML END ============*/
