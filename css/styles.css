@@ -735,31 +735,78 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.modal-form-checkbox-policy::before {
-  position: relative;
-  display: inline-block;
-  content: '';
-  width: 16px;
-  height: 15px;
-  border: 1px solid #000000;
-  border-radius: 2px;
-  cursor: pointer;
-}
 .modal-form-checkbox-policy {
-  margin-top: 20px;
-  margin-bottom: 30px;
-
-  cursor: pointer;
-}
-.modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
-  background-color: var(--accent-color);
+  display: flex;
 }
 .span-modal {
-  position: absolute;
-}
-.svg-checkbox {
-  fill: var(--accent-color);
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/index/sprite-off-check.svg);
+  background-size: 100% 100%;
   border: 2px;
+}
+
+.modal-form-checkbox input:checked + .span-modal {
+  background-image: url(../images/index/sprite-check.svg);
+}
+
+.div-footer-mail {
+  margin-left: 93px;
+}
+.div-ml {
+  margin-top: 20px;
+  display: block;
+  height: 50px;
+}
+.mail-footer-h3 {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 0.8;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.mail-footer-input {
+  width: 358px;
+  height: 50px;
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0.8;
+
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 12px;
+}
+.mail-footer-btn {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: floralwhite;
+  background: var(--accent-color);
+
+  display: inline-block;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.svg-icon-send {
+  fill: #ffffff;
 }
 /*============ FOOTER END ============*/
 
