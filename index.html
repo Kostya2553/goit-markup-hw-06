@@ -27,7 +27,7 @@
             <a class="logo link" href=""><span class="logo-web">Web</span>Studio</a>
             <ul class="menu list">
                 <li class="menu-item">
-                    <a class="menu-link link current" href="./index.html">Студия</a>
+                    <a class="menu-link-l link current" href="./index.html">Студия</a>
                 </li>
                 <li class="menu-item">
                     <a class="menu-link link" href="./partfolio.html">Портфолио</a>
@@ -434,9 +434,16 @@
                         Коментарий
                             <textarea name="user-mesage" class="modal-form-mesage" placeholder="Введите текст"></textarea> 
                     </label>
-                    <input type="checkbox" id="checkbox-policy" name="user-policy" class="modal-form-checkbox">
-                    <label for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю<a href="" 
-                        class="modal-form-policy-link">Условия договора</a> </label>
+                    <input type="checkbox" id="checkbox-policy" name="user-policy" class="modal-form-checkbox visually-hidden">
+                    <label for="checkbox-policy" class="modal-form-checkbox-policy">
+                        <span class="span-modal">
+                        <svg class="svg-checkbox" width="11" height="8">
+                            <use href="./images/index/sprite-modal-done.svg#icon-icon-done"></use>
+                        </svg>
+                    </span>
+                        Соглашаюсь с рассылкой и принимаю <a href="" 
+                        class="modal-form-policy-link">Условия договора</a> 
+                    </label>
                         <button type="submit" class="modal-form-btn">Отправить</button>
                 </form>
                 </div>
