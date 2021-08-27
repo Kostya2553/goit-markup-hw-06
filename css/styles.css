@@ -741,13 +741,13 @@ img {
 .span-modal {
   width: 16px;
   height: 15px;
-  background-image: url(../images/index/sprite-off-check.svg);
-  background-size: 100% 100%;
-  border: 2px;
+  border: 2px solid var(--accent-color);
 }
-
-.modal-form-checkbox input:checked + .span-modal {
-  background-image: url(../images/index/sprite-check.svg);
+.modal-form-checkbox {
+  display: flex;
+}
+.modal-form-checkbox :checked + .span-modal {
+  background-color: #2f303a;
 }
 
 .div-footer-mail {
