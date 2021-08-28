@@ -344,6 +344,7 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 .group-ul {
@@ -644,7 +645,7 @@ img {
   height: 11px;
   fill: #000000;
 }
-.svg-close:focus {
+.svg-close:hover {
   fill: var(--accent-color);
 }
 .modal-btn-svg {
@@ -735,27 +736,37 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.lable-form {
+}
 .modal-form-checkbox-policy {
   display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .span-modal {
+  display: block;
+
   width: 16px;
   height: 15px;
   border: 2px solid var(--accent-color);
+  border-radius: 2px;
+
+  background-size: 100% 100%;
 }
-.modal-form-checkbox {
-  display: flex;
+.modal-form-checkbox input {
 }
-.modal-form-checkbox :checked + .span-modal {
-  background-color: #2f303a;
+.modal-form-checkbox input:checked + .span-modal {
+  background-color: #0000;
 }
 
 .div-footer-mail {
   margin-left: 93px;
 }
 .div-ml {
-  margin-top: 20px;
   display: block;
+  margin-top: 20px;
   height: 50px;
 }
 .mail-footer-h3 {
@@ -770,8 +781,6 @@ img {
 }
 
 .mail-footer-input {
-  width: 358px;
-  height: 50px;
   font-family: var(--main-font);
   font-weight: normal;
   font-size: 16px;
@@ -783,7 +792,11 @@ img {
   border-radius: 4px;
 
   color: rgba(255, 255, 255, 0.6);
+
+  width: 358px;
+  height: 50px;
   margin-right: 12px;
+  padding-left: 16px;
 }
 .mail-footer-btn {
   font-family: var(--main-font);
@@ -806,6 +819,8 @@ img {
   border-radius: 4px;
 }
 .svg-icon-send {
+  width: 24px;
+  height: 24px;
   fill: #ffffff;
 }
 /*============ FOOTER END ============*/
