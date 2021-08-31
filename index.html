@@ -446,8 +446,12 @@
                             <textarea name="user-mesage" class="modal-form-mesage" placeholder="Введите текст"></textarea> 
                     </label>
                     <label class="modal-form-checkbox-policy">
-                    <input type="checkbox" name="user-policy" class="modal-form-checkbox">
-                        <span class="span-modal"></span>
+                    <input type="checkbox" name="user-policy" class="modal-form-checkbox visually-hidden">
+                        <span class="span-modal">
+                            <svg class="modal-form__svg">
+                                <use href="./images/index/sprite-check.svg#icon-check"></use>
+                            </svg>
+                        </span>
                         Соглашаюсь с рассылкой и принимаю <a href="" class="modal-form-policy-link">Условия договора</a> 
                     </label>
                         <button type="submit" class="modal-form-btn">Отправить</button>
