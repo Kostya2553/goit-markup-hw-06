@@ -461,8 +461,9 @@ img {
   letter-spacing: 0.03em;
 
   color: #212121;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  p
 }
 .ul-klient {
   display: flex;
